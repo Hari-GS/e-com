@@ -127,7 +127,7 @@ button:hover{
     }
 
     button{
-        display: none;
+        display: block;
     }
 
     .nav-links-mobile{
@@ -153,5 +153,14 @@ button:hover{
     .menu-icons i{
         font-size: 1.2rem;
         color: #222;
+    }
+
+    .mobile-signup-btn{
+        width: 50%;
+    }
+
+    .mobile-sign-up-btn-container{
+        display: flex;
+        justify-content: center;
     }
 }

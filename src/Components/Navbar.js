@@ -36,7 +36,10 @@ function Navbar(){
                 </li>
                     )
                 })}
-                <button onClick={handleClick}>Sign Up</button>
+                <div className="mobile-sign-up-btn-container">
+                <button className="mobile-signup-btn" onClick={handleClick}>Sign Up</button>
+                </div>
+                
             </ul>
         </nav>
          
