@@ -15,8 +15,9 @@ function SignUp(props){
             <div>
                 <input type="password" name="password" placeholder="Password" required/>
             </div>
-            <div>
-                <input type="submit" value="Login"/>
+            <div className='login-btn-container'>
+                {/* <input type="submit" value="Login"/> */}
+                <button className='login-btn' type='submit'>Login</button>
             </div>
         </form>
         </div>
