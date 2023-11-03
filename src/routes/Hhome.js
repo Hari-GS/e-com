@@ -4,10 +4,17 @@ import Navbar from "../Components/Navbar"
 import Trip from "../Components/Trip";
 import yourImage from '../assets/Big-Temple-Entrance.jpg';
 import Footer from "../Components/Footer";
+import SignUp from "../Components/SignUp";
+import { useState } from "react";
+
+
 
 function Hhome(){
+
+    
+
     return(
-        <>
+        <div className="main">
         <Navbar/>
         <Hero
             cName="hero"
@@ -21,7 +28,8 @@ function Hhome(){
         <Destination/>
         <Trip/>
         <Footer/>
-        </>
+      
+        </div>
     )
 }
 

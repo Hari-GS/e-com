@@ -5,6 +5,7 @@ import Home from "./routes/Hhome";
 import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
+import SignUp from './Components/SignUp';
 
 function App() {    
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/service' element={<Service/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
+
+      
       
 
       
