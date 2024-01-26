@@ -82,6 +82,10 @@ button:hover{
     z-index: 100;
 }
 
+.user-icon{
+    border-radius:100%;
+}
+
 @media screen and (max-width:850px){
 
     .NavbarItems{
@@ -163,6 +167,19 @@ button:hover{
 
     .mobile-sign-up-btn-container{
         display: flex;
+        
         justify-content: center;
     }
+
+    .user-icon{
+        
+        border-radius: 0%;
+        width: 30%;
+    }
+
+    .icon-container{
+        display: flex;
+        justify-content: center;
+    }
+    
 }

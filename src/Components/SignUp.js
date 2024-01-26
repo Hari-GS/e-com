@@ -1,27 +1,90 @@
 import './SignUpStyles.css'
+import { useState } from 'react'
+import SignUpOrg from './SignUpOrg'
+import axios from 'axios';
 
 function SignUp(props){
-    return (props.trigger)?(
+   
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [showWarning, setShowWarning] = useState(false);
+    const { loggedIn, onLoginSuccess } = props;
+
+
+    const handleUsernameChange = (e) => {
+        setUsername(e.target.value);
+    };
+
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    };
+
+    const handleLogin = async (e) => {
+        e.preventDefault();
+
+        try {
+            // Assuming you have an API endpoint for login
+            const response = await axios.post('http://localhost:8080/login', {
+                username: username,
+                password: password
+            });
+
+            // Check the response from the server, you might get a token or some other data
+
+            // Close the login form or perform other actions based on the response
+            // For example, you might redirect the user to a dashboard page
+            props.handlePopupClick();
+            console.log("Login Successfull")
+            onLoginSuccess();
+        } catch (error) {
+            // Handle error, show a message, etc.
+            console.error('Error during login:', error);
+            setShowWarning(true);
+        }
+    };
+
+
+    const handleClick=(e)=>{
+        e.preventDefault()
+        props.handleSignUp()
+    }
+
+    const handleClose = () => {
+        props.handlePopupClick()
+    }
+    
+
+    return (
         <div className='login-container'>
             <div className='top-heading'>
                 <h2>Login</h2>
-                <button onClick={()=>props.setTrigger(false)}>Close</button> 
+                <button onClick={handleClose}>Close</button> 
             </div>
            
-        <form action="/">
+        <form onSubmit={handleLogin}>
             <div>
-                <input type="text" name="username" placeholder="Username or Email" required/>
+                <input type="text" name="username" placeholder="Username"  value={username} onChange={handleUsernameChange} required/>
             </div>
             <div>
-                <input type="password" name="password" placeholder="Password" required/>
+                <input type="password" name="password" placeholder="Password" value={password} onChange={handlePasswordChange} required/>
             </div>
+            {showWarning && (
+                <div className="warning-message">
+                    Incorrect username or password. Please try again.
+                </div>
+            )}
             <div className='login-btn-container'>
                 {/* <input type="submit" value="Login"/> */}
                 <button className='login-btn' type='submit'>Login</button>
             </div>
         </form>
+        <div className='no-account'>
+                <p>Don't have an account? <button onClick={handleClick}>Sign Up</button></p>
+            </div>
+                
+
         </div>
-    ):""
+    )
 }
 
 export default SignUp
