@@ -1,0 +1,61 @@
+.background-container {
+    padding-top: 10rem;
+    background-image: url('../assets/bt entrance.jpg'); /* Path to your image file */
+    background-size: cover; /* Adjust to 'contain' or other values based on your preference */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Optionally, you can set a background color in case the image doesn't fully cover the container */
+    /* Replace with your desired color */
+    /* Add any additional styles for your container */
+   /* Adjust the height as needed */
+  }
+.card {
+    padding: 3rem 0rem;
+    margin-left:1rem ;
+    margin-right:1rem ;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.details-container{
+    /* margin-top: 10rem; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* gap: 30px;  */
+}
+
+.bus-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.b-btn{
+  
+    align-self: center;
+    
+    margin-left: 2rem;
+}
+
+.bus-details p, .bus-details h3 {
+    margin: 0;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: left;
+    margin-left: 2rem;
+}
+

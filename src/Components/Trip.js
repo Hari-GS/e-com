@@ -14,29 +14,29 @@ function Trip(){
                 <TripData
                     image={card1}
                     heading="Trip Guide"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis molestie urna, nec dapibus 
-                    libero rutrum vestibulum. Ut id justo a purus elementum faucibus vel vel massa. Aliquam a lectus non magna
-                     fermentum elementum. Etiam pulvinar nisl justo, vel tincidunt tortor eleifend a. Donec id fermentum augue. 
-                     Vivamus a felis mauris. Curabitur eget ullamcorper urna, ut faucibus tellus. Ut sem nulla, faucibus vel interdum 
-                     non, vestibulum mollis ligula. Cras feugiat purus tristique augue tempor, in dapibus dui commodo."
+                    text="where unforgettable journeys await at every turn. Our expert guides are passionate about curating immersive 
+                    travel experiences tailored to your unique interests and preferences. Whether you seek cultural enlightenment, adventure
+                     thrills, or serene escapes, our knowledgeable guides will craft a seamless itinerary that transcends ordinary travel. 
+                     With a keen eye for hidden gems and local insights, we go beyond the traditional tourist path to ensure you discover 
+                     the heart and soul of each destination."
                 />
                  <TripData
                     image={card2}
                     heading="Food"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis molestie urna, nec dapibus 
-                    libero rutrum vestibulum. Ut id justo a purus elementum faucibus vel vel massa. Aliquam a lectus non magna
-                     fermentum elementum. Etiam pulvinar nisl justo, vel tincidunt tortor eleifend a. Donec id fermentum augue. 
-                     Vivamus a felis mauris. Curabitur eget ullamcorper urna, ut faucibus tellus. Ut sem nulla, faucibus vel interdum 
-                     non, vestibulum mollis ligula. Cras feugiat purus tristique augue tempor, in dapibus dui commodo."
+                    text="Indulge your senses with our exquisite Food Guide service, where culinary delights take center stage in your 
+                    travel experience. Whether you're a connoisseur seeking Michelin-starred elegance or an avid 
+                     street food enthusiast craving authentic local flavors, our guides are your culinary compass. We meticulously curate dining
+                      experiences that showcase the essence of each destination, from hidden gems to renowned establishments.Join us, and let the 
+                      joy of discovery unfold with every delectable bite"
                 />
                  <TripData
                     image={card3}
                     heading="DSLR Photography"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis molestie urna, nec dapibus 
-                    libero rutrum vestibulum. Ut id justo a purus elementum faucibus vel vel massa. Aliquam a lectus non magna
-                     fermentum elementum. Etiam pulvinar nisl justo, vel tincidunt tortor eleifend a. Donec id fermentum augue. 
-                     Vivamus a felis mauris. Curabitur eget ullamcorper urna, ut faucibus tellus. Ut sem nulla, faucibus vel interdum 
-                     non, vestibulum mollis ligula. Cras feugiat purus tristique augue tempor, in dapibus dui commodo."
+                    text="Embark on a visual odyssey with our DSLR Photography service, where every click tells a story and every frame is a work of art.
+                    Our skilled photographers are equipped with the technical prowess and creative insight to elevate your photography experience.
+                    We delve into the intricacies of camera settings, composition, and lighting, providing hands-on guidance to ensure you
+                    capture the perfect shot in any setting. Join us on a visual journey where each click is an opportunity to freeze a moment in time with 
+                    unparalleled clarity and emotion."
                 />
             </div>
         </div>

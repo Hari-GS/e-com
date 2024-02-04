@@ -9,10 +9,14 @@ function SignUp(props){
     const [password, setPassword] = useState("");
     const [showWarning, setShowWarning] = useState(false);
     const { loggedIn, onLoginSuccess } = props;
-
+    const [typedUsername, setTypedUsername] = useState('')
+    const { giveUserName } = props;
+   
 
     const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
+        const newUsername = e.target.value;
+        setUsername( newUsername);
+        giveUserName( newUsername);
     };
 
     const handlePasswordChange = (e) => {
@@ -33,9 +37,13 @@ function SignUp(props){
 
             // Close the login form or perform other actions based on the response
             // For example, you might redirect the user to a dashboard page
+            const responseData=response.data
+            const userIdFromResponse = parseInt(responseData.split('User ID: ')[1])
+            const usernameFromResponse = responseData.split('for user: ')[1].split('.')[0];
+        
             props.handlePopupClick();
-            console.log("Login Successfull")
-            onLoginSuccess();
+            console.log(usernameFromResponse)
+            onLoginSuccess(usernameFromResponse,userIdFromResponse);
         } catch (error) {
             // Handle error, show a message, etc.
             console.error('Error during login:', error);

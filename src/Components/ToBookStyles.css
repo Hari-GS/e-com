@@ -1,0 +1,83 @@
+.big-container{
+    display: flex;
+  flex-wrap: wrap;
+  background-image: url('../assets/bt entrance.jpg'); /* Path to your image file */
+  background-size: cover; /* Adjust to 'contain' or other values based on your preference */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-bottom: 10rem;
+}
+
+.to-book-container{
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 9rem;
+    margin-left: 0rem;
+}
+
+.s-left{
+    text-align: left;
+}
+
+.s-right{
+    text-align: right;
+}
+
+.bus-num{
+    margin-bottom: 2rem;
+}
+
+.s-left p,.s-right p{
+    margin-bottom: 0.5rem;
+}
+
+.counter-container{
+    margin-top: 10rem;
+    margin-left: 7rem;
+    margin-right: 5rem;
+    text-align: end;
+}
+
+.counter-set{
+   margin-top: 2rem;
+   margin-bottom: 1.5rem;
+}
+
+.bk-btn{
+    color: white;
+    background-color: rgb(255, 61, 100);
+    letter-spacing: 0.1rem;
+    margin-right: 1rem;
+}
+
+.bk-btn:hover{
+    background-color: rgb(96, 233, 96);
+}
+
+.as-click{
+    margin: 0 1rem;
+}
+
+.bk-btn-active{
+    
+    background-color:rgb(96, 233, 96) ;
+}
+
+.bk-btn-active:hover{
+    background-color:rgb(96, 233, 96) ;
+}
+
+.first-half{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+    border-radius: 13px;
+    margin-top: 11rem;
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    padding-left: 6rem;
+    padding-bottom: 8rem;
+    background-color: white;
+}

@@ -14,8 +14,8 @@ function Hhome(){
             heroImg={yourImage}
             title="Your Tanjore Trip is Ready"
             text="2000 Years of History Waiting For You"
-            buttonText="Trip Plan"
-            url="/"
+            buttonText="Book now"
+            url="/plan"
             btnClass="show"
         /> 
         <Destination/>
