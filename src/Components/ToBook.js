@@ -36,7 +36,7 @@ function ToBook() {
 
             try {
                 setBookingInProgress(true);
-                const response = await axios.post(`http://localhost:8080/to-book/${localStorage.userName}`, {
+                const response = await axios.post(`https://tanjore-tour-api.onrender.com/to-book/${localStorage.userName}`, {
                     userName: localStorage.getItem('userName'),
                     userId: localStorage.getItem('userId'),
                     busNumber: bus.busNumber,
@@ -53,7 +53,7 @@ function ToBook() {
                 }
 
                 // Fetch the updated bus data after booking
-            const updatedResponse = await axios.get(`http://localhost:8080/plan/${busNumber}`);
+            const updatedResponse = await axios.get(`https://tanjore-tour-api.onrender.com/plan/${busNumber}`);
             setUpdatedBus(updatedResponse.data);
             setButtonText('Booked !');
             setbtnClr('true')
@@ -79,7 +79,7 @@ function ToBook() {
         // Make an API call to fetch bus data when the component mounts
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:8080/plan/${busNumber}`); // Replace with your backend endpoint
+                const response = await axios.get(`https://tanjore-tour-api.onrender.com/plan/${busNumber}`); // Replace with your backend endpoint
                 setBus(response.data); // Assuming the response contains the bus data
             } catch (error) {
                 console.error('Error fetching bus data:', error);
