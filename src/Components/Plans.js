@@ -7,17 +7,17 @@ import bt from '../assets/bt entrance.jpg'
 
 function Plans() {
 
-    const [busDetails, setBusDetails] = useState([]);
+    // const [busDetails, setBusDetails] = useState([]);
 
-    useEffect(() => {
-        axios.get('https://tanjore-tour-api.onrender.com/plans')
-            .then(response => setBusDetails(response.data))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+    // useEffect(() => {
+    //     axios.get('https://tanjore-tour-api.onrender.com/plans')
+    //         .then(response => setBusDetails(response.data))
+    //         .catch(error => console.error('Error fetching data:', error));
+    // }, []);
 
     return (        
             <div className="background-container details-container">
-            {busDetails.map(bus => (
+            {/* {busDetails.map(bus => (
                 <div key={bus.id} className="card">
                     <div className="bus-details">
                         <div className="left">
@@ -42,7 +42,8 @@ function Plans() {
                     </div>
                     
                 </div>
-            ))}
+            ))} */}
+            Hello
             </div>
 
     )
