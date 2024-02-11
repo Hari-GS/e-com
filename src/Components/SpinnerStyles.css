@@ -1,0 +1,35 @@
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent white background */
+    z-index: 1000; /* Ensure the spinner is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner-container {
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .spinner {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 6px solid #ffffff; /* Spinner color */
+    border-top-color: transparent; /* Transparent top border */
+    animation: spin 1.2s linear infinite; /* Apply animation */
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg); /* Rotate the spinner 360 degrees */
+    }
+  }
+  
