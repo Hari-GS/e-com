@@ -23,7 +23,7 @@ function SignUpOrg(props) {
     const handleClose=()=>{
         props.handleSignUp()
     }
-
+//jjjjj
     const handleLogin=()=>{
         props.handleOpenLogin()
     }
