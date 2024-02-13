@@ -121,8 +121,9 @@ function ToBook() {
             </div>
 
             </div>
+           
             <div className={bookingDetails?"second-half":"invisible"}>
-                <BookedDetails />
+                {bookingDetails && <BookedDetails />}
             </div>
         </div>
         
