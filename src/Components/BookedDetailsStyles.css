@@ -1,5 +1,28 @@
 .bd-cont{
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
     margin-top: 11rem;
-    margin-left: 4rem;
+    margin-left: 7rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    
+}
+
+.bd-cont h2{
+    margin-bottom: 1rem;
+}
+
+.cont123{
+    display: flex;
+    text-align: start;
+    margin-left: 3rem;
+}
+
+.inside-cont1{
+    text-align: start;
+}
+
+.inside-cont2{
+    text-align: end;
 }
