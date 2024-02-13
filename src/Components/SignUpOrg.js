@@ -34,7 +34,7 @@ function SignUpOrg(props) {
         try {
             // Assuming you have an API endpoint for registration
             const id=Math.floor(10000 + Math.random() * 90000);
-            const response = await axios.post('https://tanjore-tour-api.onrender.com/signup', {
+            const response = await axios.post('http://localhost:8080/signup', {
                 username: username,
                 userId: id,
                 password: password,

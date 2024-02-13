@@ -28,7 +28,7 @@ function SignUp(props){
 
         try {
             // Assuming you have an API endpoint for login
-            const response = await axios.post('https://tanjore-tour-api.onrender.com/login', {
+            const response = await axios.post('http://localhost:8080/login', {
                 username: username,
                 password: password
             });

@@ -80,4 +80,23 @@
     padding-left: 6rem;
     padding-bottom: 8rem;
     background-color: white;
+    z-index: 1;
 }
+
+.invisible {
+    display: none;
+    opacity: 0;
+    right: 43%;
+    position: absolute;
+    z-index: 0;
+    transition-duration: 1s;
+}
+
+.second-half {
+    display: block;
+    opacity: 1;
+    transition-duration: 1s;
+    z-index: 1; /* Ensure it's above other elements */
+    
+}
+
