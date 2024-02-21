@@ -24,7 +24,7 @@ function BookedDetails() {
     
     return (
         <div className="bd-cont">
-             <h2>Booked! Your booking details : </h2>
+             <h2><span className="book-text">Booked!</span> Your booking details : </h2>
              
              <div className="cont123">
              <div className="inside-cont1">

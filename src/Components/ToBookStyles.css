@@ -1,5 +1,5 @@
 .big-container{
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   background-image: url('../assets/bt entrance.jpg'); /* Path to your image file */
   background-size: cover; /* Adjust to 'contain' or other values based on your preference */
@@ -98,5 +98,37 @@
     transition-duration: 1s;
     z-index: 1; /* Ensure it's above other elements */
     
+}
+
+@media screen and (max-width:850px){
+    .big-container{
+        background-attachment: fixed;
+    }
+    .to-book-container{
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .first-half{
+        padding: 1rem 1rem;
+        margin: 1rem 1rem;
+        margin-top: 10rem;
+        flex-direction: column;
+    }
+    .counter-container{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .counter-set{
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+    .counter-set span{
+        padding-top: 0.8rem;
+    }
+    .bk-btn-active, .bk-btn{
+        margin-left: 5.5rem;
+    }
 }
 

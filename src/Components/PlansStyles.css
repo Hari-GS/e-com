@@ -59,3 +59,35 @@
     margin-left: 2rem;
 }
 
+@media screen and (max-width:850px){
+    .details-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .bus-details{
+        margin: 1rem 0rem;
+        padding: 0;
+        justify-content: space-evenly;
+        
+    }
+
+   .background-container{
+       background-attachment: fixed;
+       padding-top: 8rem;
+   }
+
+   .card{
+       font-size: small; 
+   }
+   .b-btn{
+       margin-right: 2rem;
+   }
+}
