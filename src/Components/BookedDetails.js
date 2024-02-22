@@ -10,7 +10,7 @@ function BookedDetails() {
         const fetchUserDetails = async () => {
           try {
             console.log("helo")
-            const response = await axios.get(`http://localhost:8080/${localStorage.getItem('userId')}/booked`); // Replace with your actual API endpoint
+            const response = await axios.get(`https://tanjore-tour-api.onrender.com/${localStorage.getItem('userId')}/booked`); // Replace with your actual API endpoint
             setUser(response.data);
           
             

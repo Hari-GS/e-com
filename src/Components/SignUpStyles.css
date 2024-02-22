@@ -78,6 +78,7 @@ input[type="submit"]:hover {
 
 .no-account button {
     /* Remove button styling */
+    display: inline-block;
     background: none;
     border: none;
     padding: 0;

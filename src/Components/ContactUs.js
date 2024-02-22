@@ -4,7 +4,7 @@ function ContactForm(){
     return(
         <div className="form-container">
             <h1>Send a message to us!</h1>
-            <form action="http://localhost:8080/home" method="POST">
+            <form action="https://tanjore-tour-api.onrender.com/home" method="POST">
                 <input placeholder="Name"/>
                 <input placeholder="Email"/>
                 <input placeholder="Subject"/>

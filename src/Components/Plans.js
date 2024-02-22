@@ -12,7 +12,7 @@ function Plans() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get('http://localhost:8080/plans')
+        axios.get('https://tanjore-tour-api.onrender.com/plans')
             .then(response => {
                 setBusDetails(response.data);
                 setLoading(false); // Set loading to false when data fetching is complete

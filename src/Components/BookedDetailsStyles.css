@@ -30,3 +30,12 @@
 .book-text{
     color: #00ff4c;
 }
+
+@media screen and (max-width:850px){
+    .bd-cont{
+        margin-top: 0rem;
+        position: absolute;
+        margin-left: 0rem;
+        padding: 1rem 0;
+    }
+}
