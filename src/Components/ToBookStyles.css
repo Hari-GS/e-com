@@ -61,12 +61,13 @@
 }
 
 .bk-btn-active{
-    
-    background-color:rgb(96, 233, 96) ;
+    color: rgb(54, 54, 54);
+    background-color:rgb(96, 233, 96) ; 
 }
 
 .bk-btn-active:hover{
     background-color:rgb(96, 233, 96) ;
+    color: rgb(116, 116, 116);
 }
 
 .first-half{
